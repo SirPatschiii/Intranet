@@ -1,2 +1,2 @@
 # Intranet
-A project to create a intranet in an fictional company
+A project to create an intranet in a fictional company
