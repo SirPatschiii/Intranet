@@ -1,0 +1,123 @@
+@font-face {
+    font-family: MontserratRegular;
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url("./fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+* {
+    font-family: MontserratMedium, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    padding-top: 180px;
+    background-image: url("../images/BackgroundLogin.png");
+}
+
+header {
+    
+}
+
+main {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px -4px #000000;
+}
+
+footer {
+    
+}
+
+.loginContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.loginContainer h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+.field label {
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.field input {
+    width: 60%;
+    margin-bottom: 25px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.loginButtons {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.loginLogin, .loginBack {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.loginLogin:hover, .loginBack:hover {
+    box-shadow: 0px 0px 15px -4px #000000;
+}
+
+.loginLogin {
+    font-family: MontserratBold, sans-serif;
+    color: #FFFFFF;
+    background-color: #1F1FFF;
+}
+
+.loginBack a {
+    color: #000000;
+    text-decoration: none;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IntraDL Login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleLogin.css">
 </head>
 
 <body>
@@ -14,7 +14,26 @@
     </header>
 
     <main>
+        <div class="loginContainer">
+            <form class="loginForm">
+                <h1>Login</h1>
+                <div class="field">
+                    <label for="inputUsername">Benutzername</label>
+                    <input type="text" id="inputUsername" placeholder="max.mustermann">
+                </div>
 
+                <div class="field">
+                    <label for="inputPassword">Passwort</label>
+                    <input type="password" id="inputPassword"
+                        placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;">
+                </div>
+
+                <div class="loginButtons">
+                    <button type="button" class="loginBack"><a href="./index.html">Zurück</a></button>
+                    <button type="submit" class="loginLogin">Anmelden</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
