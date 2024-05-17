@@ -30,27 +30,53 @@ h1 {
 }
 
 body {
-    padding-top: 180px;
     background-image: url("../images/BackgroundLogin.png");
 }
 
 header {
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    box-shadow: 0px 0px 15px -4px #000000;
+    margin-bottom: 150px;
+}
+
+.navLogo {
+    height: 100px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li a {
+    font-family: MontserratBold, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+
+li a:hover {
+    color: #1F1FFF;
+    transition: 0.3s ease-in-out;
 }
 
 main {
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 80px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 15px -4px #000000;
-}
-
-footer {
-    
 }
 
 .loginContainer {
@@ -96,7 +122,8 @@ footer {
     text-align: center;
 }
 
-.loginLogin, .loginBack {
+.loginLogin,
+.loginBack {
     margin-left: 30px;
     margin-right: 30px;
     padding-top: 10px;
@@ -107,7 +134,8 @@ footer {
     border-radius: 5px;
 }
 
-.loginLogin:hover, .loginBack:hover {
+.loginLogin:hover,
+.loginBack:hover {
     box-shadow: 0px 0px 15px -4px #000000;
 }
 
