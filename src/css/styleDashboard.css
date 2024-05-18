@@ -1,0 +1,115 @@
+@font-face {
+    font-family: MontserratRegular;
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url("./fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+* {
+    font-family: MontserratMedium, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    min-height: 80px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
+    box-shadow: 0px 0px 15px -4px #000000;
+}
+
+.navLogo {
+    cursor: pointer;
+    position: absolute;
+    height: 60px;
+    padding: 10px;
+    top: 0px;
+    left: 5%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    font-family: MontserratBold, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    color: #1F1FFF;
+    transition: 0.3s ease-in-out;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    height: 780px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.topLeft {
+    height: 50%;
+    width: 50%;
+}
+
+.topRight {
+    height: 50%;
+    width: 50%;
+}
+
+.bottom {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.bottomLeft {
+    height: 50%;
+    width: 50%;
+}
+
+.bottomRight {
+    height: 50%;
+    width: 50%;
+}
