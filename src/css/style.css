@@ -36,14 +36,13 @@ header {
     background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
     box-shadow: 0px 0px 15px -4px #000000;
     margin-bottom: 20px;
+    height: 80px;
 }
 
 .navLogo {
-    height: 100px;
+    height: 74px;
     cursor: pointer;
-    padding: 20px;
-    margin-left: 0px;
-    margin-right: 80px;
+    margin: 14px 100px 10px -100px;
 }
 
 ul {
@@ -68,16 +67,62 @@ li a:hover {
 }
 
 main {
-    text-align: center;
     width: 80%;
     height: 101%;
 	margin: 0 auto;
 }
 
+.formurlaubbem{
+    margin-top: 50px;
+}
 #bemerkung {
-    width: 40%;
-    height: 30px;
+    width: 60%;
+    height: 80px;
     resize: none;
+}
+
+.formurlaub {
+    border: 2px solid #1F1FFF;
+    border-radius: 8px;
+    height: 520px;
+    padding: 30px;
+    text-align: center;
+}
+
+.formurlaubzeit input{
+    display: block;
+    float: left;
+    max-width: 96px;
+    margin-right: 4px;
+    font-size: small;
+}
+
+.formurlaubtop {
+    margin-top: 20px;
+}
+.formurlaubtop label{
+    display: block;
+    text-align: left;
+    padding-left: 38%;
+    float: left;
+    margin-right: 20px;
+    width: 90px;
+}
+
+.formurlaubtop input{
+    display: block;
+    width: 200px;
+}
+
+.formurlaubsenden > input[type="button" i] {
+    font-family: MontserratBold, sans-serif;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    background-color: #1F1FFF;
+    margin: 30px 30px 0px 30px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 footer {
