@@ -29,44 +29,53 @@ h1 {
     font-size: 40px;
 }
 
+body {
+    position: relative;
+}
+
 header {
+    position: fixed;
+    min-height: 80px;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
     box-shadow: 0px 0px 15px -4px #000000;
-    margin-bottom: 20px;
-    height: 80px;
 }
 
 .navLogo {
-    height: 74px;
     cursor: pointer;
-    margin: 14px 100px 10px -100px;
+    position: absolute;
+    height: 60px;
+    padding: 10px;
+    top: 0px;
+    left: 5%;
 }
 
-ul {
+nav ul {
     list-style: none;
 }
 
-li {
+nav ul li {
     display: inline-block;
-   padding: 0px 20px;
+    padding: 0px 20px;
 }
 
-li a {
+nav ul li a {
     font-family: MontserratBold, sans-serif;
     font-size: 22px;
     text-decoration: none;
     color: #000000;
 }
 
-li a:hover {
+nav ul li a:hover {
     color: #1F1FFF;
     transition: 0.3s ease-in-out;
 }
 
 main {
+    padding-top: 150px;
     width: 80%;
     height: 101%;
 	margin: 0 auto;
