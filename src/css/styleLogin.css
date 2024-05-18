@@ -30,46 +30,56 @@ h1 {
 }
 
 body {
+    position: relative;
     background-image: url("../images/BackgroundLogin.png");
 }
 
 header {
+    position: fixed;
+    min-height: 80px;
+    min-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
     box-shadow: 0px 0px 15px -4px #000000;
-    margin-bottom: 150px;
 }
 
 .navLogo {
-    height: 100px;
     cursor: pointer;
-    padding: 20px;
+    position: absolute;
+    height: 60px;
+    padding: 10px;
+    top: 0px;
+    left: 5%;
 }
 
-ul {
+nav ul {
     list-style: none;
 }
 
-li {
+nav ul li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-li a {
+nav ul li a {
     font-family: MontserratBold, sans-serif;
     font-size: 22px;
     text-decoration: none;
     color: #000000;
 }
 
-li a:hover {
+nav ul li a:hover {
     color: #1F1FFF;
     transition: 0.3s ease-in-out;
 }
 
 main {
+    padding-top: 15%;
+}
+
+section {
     margin-left: 30%;
     margin-right: 30%;
     padding: 20px;
