@@ -30,32 +30,47 @@
     </header>
 
     <main>
-        <form action="" class="formurlaub" id="urlaubsantrag">
-            <h1>Urlaubsantrag 2024</h1><br/>
-            <div class="formurlaubtop">
-                <div class="formurlaubname">
+        <form action="" class="formfeedback" id="feedback">
+            <h1>Feedbackgespräch</h1><br/>
+            <div class="formfeedbacktop">
+                <div class="formfeedbackname">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name"><br/>
                 </div>
 
-                <div class="formurlaubzeit">
+                <div class="formfeedbackzeit">
                     <label for="zeitraum">Zeitraum</label>
                     <input type="date" name="von">
                     <input type="date" name="bis"><br />
                 </div><br />
-
-                <div class="formurlaubver">
-                    <label for="vertretung">Vertretung</label>
-                    <input type="text" name="vertretung" id="vertretung"><br/>
-                </div>
-            </div> 
-            
-            <div class="formurlaubbem">
-                <label for="bemerkung"><h2>Bemerkung</h2></label><br/>
-                <textarea name="bemerkung" id="bemerkung"></textarea><br/>
+            </div>
+            <div class="formfeedbackpers">
+                <h2>Gespräch mit ...</h2><br />
+                <label for="abteilungsleiter">Abteilungsleiter</label>
+                <input type="checkbox" name="abteilungsleiter">
+                <label for="teilnehmer">Teamleiter</label>
+                <input type="checkbox" name="teilnehmer"><br />
+                <label for="gf">Geschäftsführung</label>
+                <input type="checkbox" name="gf">
+                <label for="kollegen">Kollegen</label>
+                <input type="checkbox" name="kollegen">
+            </div>
+            <div class="formfeedbackgrund">
+                <hr>
+                <h2>Feedbackgrund</h2>
+                <label for="urlaub">Urlaub steht an</label>
+                <input type="radio" name="feedbackgrund" value="urlaub">
+                <label for="weiterbildung">Weiterbildung</label>
+                <input type="radio" name="feedbackgrund" value="weiterbildung">
+                <label for="persönlich">persönlich</label>
+                <input type="radio" name="feedbackgrund" value="persönlich">
+            </div>
+            <div class="formfeedbackbem">
+                <label for="feedbackbemerkung"><h2>Bemerkung</h2></label><br/>
+                <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea><br/>
             </div>
 
-            <div class="formurlaubsenden">
+            <div class="formsenden">
                 <input type="button" value="Senden">
             </div>
         </form>
