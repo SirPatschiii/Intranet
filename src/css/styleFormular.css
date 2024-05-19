@@ -111,7 +111,7 @@ main {
 .formurlaubbem{
     margin-top: 50px;
 }
-#bemerkung {
+#urlaubbemerkung {
     width: 60%;
     height: 80px;
     resize: none;
@@ -150,7 +150,7 @@ main {
     width: 200px;
 }
 
-.formurlaubsenden > input[type="button" i] {
+.formsenden > input[type="button" i] {
     font-family: MontserratBold, sans-serif;
     font-size: 0.8rem;
     color: #FFFFFF;
@@ -161,6 +161,60 @@ main {
     border-radius: 5px;
 }
 
-footer {
-    
+.formfeedbackbem{
+    margin-top: 50px;
+}
+#feedbackbemerkung {
+    width: 60%;
+    height: 80px;
+    resize: none;
+}
+
+.formfeedback {
+    border: 2px solid #1F1FFF;
+    border-radius: 8px;
+    height: 520px;
+    padding: 30px;
+    text-align: center;
+}
+
+.formfeedbackzeit input{
+    display: block;
+    float: left;
+    max-width: 96px;
+    margin-right: 4px;
+    font-size: small;
+}
+
+.formfeedbacktop {
+    margin-top: 20px;
+}
+.formfeedbacktop label{
+    display: block;
+    text-align: left;
+    padding-left: 38%;
+    float: left;
+    margin-right: 20px;
+    width: 90px;
+}
+
+.formfeedbacktop input{
+    display: block;
+    width: 200px;
+}
+
+.formfeedbackgrund hr{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formfeedbackgrund h2{
+    margin-bottom: 10px;
+}
+
+.formfeedbackgrund > input[type="radio"] {
+    padding-right: 10px;
+    border-right: #1F1FFF;
 }
