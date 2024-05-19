@@ -57,6 +57,19 @@ nav ul {
     list-style: none;
 }
 
+nav ul ul {
+    display: none;
+    font-family: MontserratBold, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+    position: fixed;
+}
+nav ul li:hover > ul {
+    display: inline-block;
+    background-color: white;
+}
+
 nav ul li {
     display: inline-block;
     padding: 0px 20px;
@@ -74,8 +87,22 @@ nav ul li a:hover {
     transition: 0.3s ease-in-out;
 }
 
+.formularsub {
+    margin-top: 60px;
+    margin-left: -120px;
+}
+
+.formularsub li {
+    text-align: center;
+    border: 2px solid #1F1FFF;
+    border-radius: 8px;
+    text-align: justify;
+    width: 210px;
+    height: 30px;
+}
+
 main {
-    padding-top: 150px;
+    padding-top: 100px;
     width: 80%;
     height: 101%;
 	margin: 0 auto;

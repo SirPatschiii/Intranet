@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntraDL Formulare</title>
+    <link rel="icon" type="image/x-icon" href="../images/IntraDLFavicon.png">
+    <link rel="stylesheet" href="../css/styleFormular.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="navLogo" src="../images/IntraDLTransparent.png" alt="IntraDL Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">News</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li>
+                    <a href="#">Formulare</a>
+                    <ul class="formularsub">
+                        <li><a href="./formularurlaub.html">Urlaubsantrag</a></li><br />
+                        <li><a href="./formularfeedback.html">Feedbackgespräch</a></li>
+                    </ul>
+                </li>
+                <li><a href="./department.html">Abteilung</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" class="formurlaub" id="urlaubsantrag">
+            <h1>Urlaubsantrag 2024</h1><br/>
+            <div class="formurlaubtop">
+                <div class="formurlaubname">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name"><br/>
+                </div>
+
+                <div class="formurlaubzeit">
+                    <label for="zeitraum">Zeitraum</label>
+                    <input type="date" name="von">
+                    <input type="date" name="bis"><br />
+                </div><br />
+
+                <div class="formurlaubver">
+                    <label for="vertretung">Vertretung</label>
+                    <input type="text" name="vertretung" id="vertretung"><br/>
+                </div>
+            </div>
+
+            <div class="formurlaubbem">
+                <label for="bemerkung"><h2>Bemerkung</h2></label><br/>
+                <textarea name="bemerkung" id="bemerkung"></textarea><br/>
+            </div>
+
+            <div class="formurlaubsenden">
+                <input type="button" value="Senden">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
