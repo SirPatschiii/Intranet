@@ -162,7 +162,7 @@ main {
 }
 
 .formfeedbackbem{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 #feedbackbemerkung {
     width: 60%;
@@ -187,7 +187,7 @@ main {
 }
 
 .formfeedbacktop {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .formfeedbacktop label{
     display: block;
@@ -215,6 +215,5 @@ main {
 }
 
 .formfeedbackgrund > input[type="radio"] {
-    padding-right: 10px;
-    border-right: #1F1FFF;
+    margin-right: 12px;
 }
