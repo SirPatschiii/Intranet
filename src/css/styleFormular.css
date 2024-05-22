@@ -92,15 +92,15 @@ nav ul li a:hover {
 }
 
 #subnav {
-    height: 90px;
+    height: 84px;
 }
 
 #subnav > p {
-    margin-top: 30px;
+    margin-top: 25px;
 }
+
 .formularsub li {
     text-align: center;
-    text-align: justify;
     width: 210px;
     height: 30px;
     background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
