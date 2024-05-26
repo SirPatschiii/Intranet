@@ -65,7 +65,8 @@ nav ul ul {
     color: #000000;
     position: fixed;
 }
-nav ul li:hover > ul {
+
+nav ul li:hover>ul {
     display: inline-block;
     background-color: white;
 }
@@ -75,7 +76,8 @@ nav ul li {
     padding: 0px 20px;
 }
 
-nav ul li a, p {
+nav ul li a,
+p {
     font-family: MontserratBold, sans-serif;
     font-size: 22px;
     text-decoration: none;
@@ -95,7 +97,7 @@ nav ul li a:hover {
     height: 84px;
 }
 
-#subnav > p {
+#subnav>p {
     margin-top: 25px;
 }
 
@@ -107,24 +109,27 @@ nav ul li a:hover {
     box-shadow: 0px 0px 15px -4px #000000;
 }
 
-/*main {
+main {
     display: flex;
     flex-wrap: wrap;
     padding-top: 150px;
     height: 780px;
     width: 100%;
-}*/
-main {
+}
+
+/*main {
     padding-top: 100px;
     width: 80%;
     height: 101%;
 	margin: 0 auto;
-}
+}*/
 
 .top {
     display: flex;
     height: 50%;
     width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .topLeft {
@@ -141,6 +146,8 @@ main {
     display: flex;
     height: 50%;
     width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .bottomLeft {
