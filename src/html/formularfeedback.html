@@ -31,43 +31,64 @@
 
     <main>
         <form action="" class="formfeedback" id="feedback">
-            <h1>Feedbackgespräch</h1><br/>
             <div class="formfeedbacktop">
+                <h1>Feedbackgespräch</h1>
                 <div class="formfeedbackname">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name"><br/>
+                    <input type="text" name="name" id="name">
                 </div>
 
                 <div class="formfeedbackzeit">
-                    <label for="zeitraum">Zeitraum</label>
-                    <input type="date" name="von">
-                    <input type="date" name="bis"><br />
-                </div><br />
+                    <label for="formfeedbackzeitraum">Zeitraum</label>
+                    <div class="formfeedbackzeitraum">
+                        <input type="date" name="von">
+                        <input type="date" name="bis">
+                    </div>
+                </div>
+
+                <div class="formfeedbackkom">
+                    <h2>Gespräch mit ...</h2>
+                    <div class="formfeedbackpers">
+                        <div class="left">
+                            <div>
+                                <label for="abteilungsleiter">Abteilungsleiter</label>
+                                <input type="checkbox" name="abteilungsleiter">
+                            </div>
+                            <div>
+                                <label for="teilnehmer">Teamleiter</label>
+                                <input type="checkbox" name="teilnehmer">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div>
+                                <label for="gf">Geschäftsführung</label>
+                                <input type="checkbox" name="gf">
+                            </div>
+                            <div>
+                                <label for="kollegen">Kollegen</label>
+                                <input type="checkbox" name="kollegen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formfeedbackgrund">
+                    <hr>
+                    <h2>Feedbackgrund</h2>
+                    <div class="formfeedbackgrundradio">
+                        <label for="urlaub">Urlaub steht an</label>
+                        <input type="radio" name="formfeedbackgrundradio" value="urlaub">
+                        <label for="weiterbildung">Weiterbildung</label>
+                        <input type="radio" name="formfeedbackgrundradio" value="weiterbildung">
+                        <label for="persönlich">persönlich</label>
+                        <input type="radio" name="formfeedbackgrundradio" value="persönlich">
+                    </div>
+                </div>
             </div>
-            <div class="formfeedbackpers">
-                <h2>Gespräch mit ...</h2><br />
-                <label for="abteilungsleiter">Abteilungsleiter</label>
-                <input type="checkbox" name="abteilungsleiter">
-                <label for="teilnehmer">Teamleiter</label>
-                <input type="checkbox" name="teilnehmer"><br />
-                <label for="gf">Geschäftsführung</label>
-                <input type="checkbox" name="gf">
-                <label for="kollegen">Kollegen</label>
-                <input type="checkbox" name="kollegen">
-            </div>
-            <div class="formfeedbackgrund">
-                <hr>
-                <h2>Feedbackgrund</h2>
-                <label for="urlaub">Urlaub steht an</label>
-                <input type="radio" name="feedbackgrund" value="urlaub">
-                <label for="weiterbildung">Weiterbildung</label>
-                <input type="radio" name="feedbackgrund" value="weiterbildung">
-                <label for="persönlich">persönlich</label>
-                <input type="radio" name="feedbackgrund" value="persönlich">
-            </div>
+
             <div class="formfeedbackbem">
-                <label for="feedbackbemerkung"><h2>Bemerkung</h2></label><br/>
-                <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea><br/>
+                <label for="feedbackbemerkung"><h2>Bemerkung</h2></label>
+                <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea>
             </div>
 
             <div class="formsenden">

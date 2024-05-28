@@ -1,227 +1,335 @@
 @font-face {
-    font-family: MontserratRegular;
-    src: url("./fonts/Montserrat-Regular.ttf");
+  font-family: MontserratRegular;
+  src: url("./fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: MontserratMedium;
-    src: url("./fonts/Montserrat-Medium.ttf");
+  font-family: MontserratMedium;
+  src: url("./fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
-    font-family: MontserratSemiBold;
-    src: url("./fonts/Montserrat-SemiBold.ttf");
+  font-family: MontserratSemiBold;
+  src: url("./fonts/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: MontserratBold;
-    src: url("./fonts/Montserrat-Bold.ttf");
+  font-family: MontserratBold;
+  src: url("./fonts/Montserrat-Bold.ttf");
 }
 
 * {
-    font-family: MontserratMedium, sans-serif;
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  font-family: MontserratMedium, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    min-height: 80px;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
-    box-shadow: 0px 0px 15px -4px #000000;
+  position: sticky;
+  top: 0;
+  min-height: 80px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgb(246, 246, 246),
+    rgb(158, 158, 158)
+  );
+  box-shadow: 0px 0px 15px -4px #000000;
 }
 
 .navLogo {
-    cursor: pointer;
-    position: absolute;
-    height: 80px;
-    padding: 10px;
-    top: 0px;
-    left: 5%;
+  cursor: pointer;
+  position: absolute;
+  height: 80px;
+  padding: 10px;
+  top: 0px;
+  left: 5%;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul ul {
-    display: none;
-    font-family: MontserratBold, sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-    color: #000000;
-    position: fixed;
+  display: none;
+  font-family: MontserratBold, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  position: fixed;
 }
+
 nav ul li:hover > ul {
-    display: inline-block;
-    background-color: white;
+  display: inline-block;
+  background-color: white;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-nav ul li a, p {
-    font-family: MontserratBold, sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-    color: #000000;
+nav ul li a,
+p {
+  font-family: MontserratBold, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
 }
 
 nav ul li a:hover {
-    color: #1F1FFF;
-    transition: 0.3s ease-in-out;
+  color: #1f1fff;
+  transition: 0.3s ease-in-out;
 }
 
 .formularsub {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 #subnav {
-    height: 84px;
+  height: 84px;
 }
 
 #subnav > p {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .formularsub li {
-    text-align: center;
-    width: 210px;
-    height: 30px;
-    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
-    box-shadow: 0px 0px 15px -4px #000000;
+  text-align: center;
+  width: 210px;
+  height: 30px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(246, 246, 246),
+    rgb(158, 158, 158)
+  );
+  box-shadow: 0px 0px 15px -4px #000000;
 }
 
 main {
-    padding-top: 100px;
-    width: 80%;
-    height: 101%;
-	margin: 0 auto;
+  width: 80%;
+  height: 101%;
+  margin: 1% auto 1%;
 }
 
-.formurlaubbem{
-    margin-top: 50px;
-}
-#urlaubbemerkung {
-    width: 60%;
-    height: 80px;
-    resize: none;
-}
-
+/* Formular Urlaubsantrag */
 .formurlaub {
-    border: 2px solid #1F1FFF;
-    border-radius: 8px;
-    height: 520px;
-    padding: 30px;
-    text-align: center;
-}
-
-.formurlaubzeit input{
-    display: block;
-    float: left;
-    max-width: 96px;
-    margin-right: 4px;
-    font-size: small;
+  border: 2px solid #1f1fff;
+  border-radius: 8px;
+  min-height: 83vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .formurlaubtop {
-    margin-top: 20px;
-}
-.formurlaubtop label{
-    display: block;
-    text-align: left;
-    padding-left: 38%;
-    float: left;
-    margin-right: 20px;
-    width: 90px;
+  height: 40%;
+  flex-grow: 1;
 }
 
-.formurlaubtop input{
-    display: block;
-    width: 200px;
+.formurlaubtop > h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.formurlaubname,
+.formurlaubzeit,
+.formurlaubver {
+  width: 80%;
+  height: 2rem;
+  padding-left: 34%;
+  margin-bottom: 20px;
+}
+
+.formurlaubname label {
+  text-align: left;
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.formurlaubname input {
+  width: 300px;
+  float: left;
+}
+
+.formurlaubzeitraum {
+  display: inline;
+}
+
+.formurlaubzeit label {
+  text-align: left;
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.formurlaubzeit input {
+  width: 150px;
+  float: left;
+}
+
+.formurlaubver label {
+  text-align: left;
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.formurlaubver input {
+  width: 300px;
+  float: left;
+}
+
+.formurlaubbem {
+  margin-top: 10px;
+  height: 40%;
+  flex-grow: 1;
+}
+
+#urlaubbemerkung {
+  width: 50%;
+  height: 100px;
+  resize: none;
+}
+
+.formsenden {
+  flex-grow: 1;
+  height: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .formsenden > input[type="button" i] {
-    font-family: MontserratBold, sans-serif;
-    font-size: 0.8rem;
-    color: #FFFFFF;
-    background-color: #1F1FFF;
-    margin: 30px 30px 0px 30px;
-    padding: 10px 30px 10px 30px;
-    border: 1px solid black;
-    border-radius: 5px;
+  font-family: MontserratBold, sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #1f1fff;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.formfeedbackbem{
-    margin-top: 40px;
-}
-#feedbackbemerkung {
-    width: 60%;
-    height: 80px;
-    resize: none;
-}
-
+/* Formular Feedback */
 .formfeedback {
-    border: 2px solid #1F1FFF;
-    border-radius: 8px;
-    height: 520px;
-    padding: 30px;
-    text-align: center;
-}
-
-.formfeedbackzeit input{
-    display: block;
-    float: left;
-    max-width: 96px;
-    margin-right: 4px;
-    font-size: small;
+  border: 2px solid #1f1fff;
+  border-radius: 8px;
+  min-height: 83vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .formfeedbacktop {
-    margin-top: 10px;
-}
-.formfeedbacktop label{
-    display: block;
-    text-align: left;
-    padding-left: 38%;
-    float: left;
-    margin-right: 20px;
-    width: 90px;
+  height: 20%;
+  flex-grow: 1;
 }
 
-.formfeedbacktop input{
-    display: block;
-    width: 200px;
+.formfeedbacktop > h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.formfeedbackgrund hr{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.formfeedbacktop h2{
+  margin-bottom: 10px;
 }
 
-.formfeedbackgrund h2{
-    margin-bottom: 10px;
+.formfeedbackname,
+.formfeedbackzeit {
+  width: 80%;
+  height: 2rem;
+  padding-left: 34%;
+  margin-bottom: 20px;
 }
 
-.formfeedbackgrund > input[type="radio"] {
-    margin-right: 12px;
+.formfeedbackname label {
+  text-align: left;
+  float: left;
+  width: 90px;
+}
+
+.formfeedbackname input {
+  width: 300px;
+  float: left;
+}
+
+.formfeedbackzeit label {
+  text-align: left;
+  float: left;
+  width: 90px;
+}
+
+.formfeedbackzeit input {
+  width: 150px;
+  float: left;
+}
+
+.formfeedbackzeitraum {
+  display: inline;
+}
+
+.formfeedbackkom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formfeedbackpers {
+  width: 500;
+  height: 3em;
+  padding-left: 36%;
+}
+
+.formfeedbackpers > .left {
+  width: 150px;
+  text-align: left;
+}
+
+.formfeedbackpers > .right {
+  width: 50%;
+  margin-top: -40px;
+  margin-left: 200px;
+  text-align: left;
+}
+
+.formfeedbackgrund > h2{
+  margin-bottom: 10px;
+}
+
+.formfeedbackgrund > hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formfeedbackgrundradio > input[type="radio"] {
+  margin-right: 12px;
+}
+
+.formfeedbackbem {
+  height: 20%;
+  flex-grow: 1;
+}
+
+#feedbackbemerkung {
+  width: 50%;
+  height: 100px;
+  resize: none;
 }
