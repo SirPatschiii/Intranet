@@ -1,157 +1,169 @@
 @font-face {
-    font-family: MontserratRegular;
-    src: url("./fonts/Montserrat-Regular.ttf");
+  font-family: MontserratRegular;
+  src: url("./fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: MontserratMedium;
-    src: url("./fonts/Montserrat-Medium.ttf");
+  font-family: MontserratMedium;
+  src: url("./fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
-    font-family: MontserratSemiBold;
-    src: url("./fonts/Montserrat-SemiBold.ttf");
+  font-family: MontserratSemiBold;
+  src: url("./fonts/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: MontserratBold;
-    src: url("./fonts/Montserrat-Bold.ttf");
+  font-family: MontserratBold;
+  src: url("./fonts/Montserrat-Bold.ttf");
 }
 
 * {
-    font-family: MontserratMedium, sans-serif;
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  font-family: MontserratMedium, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    min-height: 80px;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
-    box-shadow: 0px 0px 15px -4px #000000;
+  position: sticky;
+  top: 0;
+  min-height: 80px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    rgb(246, 246, 246),
+    rgb(158, 158, 158)
+  );
+  box-shadow: 0px 0px 15px -4px #000000;
 }
 
 .navLogo {
-    cursor: pointer;
-    position: absolute;
-    height: 80px;
-    padding: 10px;
-    top: 0px;
-    left: 5%;
+  cursor: pointer;
+  position: absolute;
+  height: 80px;
+  padding: 10px;
+  top: 0px;
+  left: 5%;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul ul {
-    display: none;
-    font-family: MontserratBold, sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-    color: #000000;
-    position: fixed;
+  display: none;
+  font-family: MontserratBold, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  position: fixed;
 }
 nav ul li:hover > ul {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-nav ul li a, p {
-    font-family: MontserratBold, sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-    color: #000000;
+nav ul li a,
+p {
+  font-family: MontserratBold, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
 }
 
 nav ul li a:hover {
-    color: #1F1FFF;
-    transition: 0.3s ease-in-out;
+  color: #1f1fff;
+  transition: 0.3s ease-in-out;
 }
 
 .formularsub {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 #subnav {
-    height: 84px;
+  height: 84px;
 }
 
 #subnav > p {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .formularsub li {
-    text-align: center;
-    width: 210px;
-    height: 30px;
-    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
-    box-shadow: 0px 0px 15px -4px #000000;
+  text-align: center;
+  width: 210px;
+  height: 30px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(246, 246, 246),
+    rgb(158, 158, 158)
+  );
+  box-shadow: 0px 0px 15px -4px #000000;
+  display: block;
 }
 
 main {
-    width: 80%;
-    height: 101%;
-	margin: 1% auto 1%;
-}
-
-.mitarbeiter {
-    display: inline-block;
-    padding-left: -350px;
-    padding-top: 30px;
-}
-
-.wichtigeLinks {
-    padding-left: 320px;
-}
-
-#wlinks {
-    border: 2px solid gray;
-}
-
-th, td {
-    border-right: 2px solid gray;
-    margin: 5px;
-    height: 2rem;
-    width: 20px;
+  width: 80%;
+  height: 101%;
+  margin: 1% auto 1%;
 }
 
 .contentframe {
-    border: 2px solid #1F1FFF;
-    border-radius: 8px;
-    min-height: 83vh;
+  border: 2px solid #1f1fff;
+  border-radius: 8px;
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
 .topContent {
-    border: 2px solid #1F1FFF;
-    height: 33%;
+  flex-grow: 1;
 }
 
 .middleContent {
-    border: 2px solid #1F1FFF;
-    height: 33%;
+  flex-grow: 1;
 }
 
-.bottonContent {
-    border: 2px solid #1F1FFF;
-    height: 33%;
+.meetings table {
+  border-collapse: collapse;
+}
+
+.meetings table tr th,
+.meetings table tr td {
+  border: 2px solid #1f1fff;
+  width: 6em;
+  height: 2em;
+}
+
+.bottomContent {
+  flex-grow: 1;
+}
+
+.wichtigeLinks {
+  padding-left: 320px;
+}
+
+#wlinks {
+  border: 2px solid gray;
 }
