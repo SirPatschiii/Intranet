@@ -294,35 +294,55 @@ main {
 }
 
 .formfeedbackpers{
-  padding-left: 34%;
-  width: 80%;
+  padding-left: 35%;
+  width: 70%;
   display: flex;
   flex-direction: row;
 }
 
 .left {
   flex-grow: 1;
-}
-.left label {
-  text-align: left;
-  float: left;
   width: 150px;
+}
+
+.left > div {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+}
+
+.left label {
+  flex-grow: 1;
+  text-align: left;
+  width: 120px;
+}
+
+.left>input  {
+  flex-grow: 1;
+  height: 13px;
+  width: 13px;
 }
 
 .right {
   flex-grow: 1;
 }
 
+.right > div {
+  display: flex;
+  flex-direction: row;
+  width: 165px;
+}
+
 .right label {
+  flex-grow: 1;
   text-align: left;
-  float: left;
   width: 150px;
 }
 
-.right input {
-  align-items: center;
-  justify-content: center;
-  float: start;
+.right>input  {
+  flex-grow: 1;
+  height: 13px;
+  width: 13px;
 }
 
 
