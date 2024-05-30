@@ -30,10 +30,6 @@ h1 {
     font-size: 40px;
 }
 
-body {
-    position: relative;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -113,52 +109,43 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 150px;
-    height: 101%;
-    width: 100%;
-}
-
-/*main {
-    padding-top: 100px;
-    width: 80%;
-    height: 101%;
-	margin: 0 auto;
-}*/
-
-.top {
-    display: flex;
-    height: 50%;
-    width: 100%;
+    padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
-}
-
-.topLeft {
-    height: 50%;
-    width: 50%;
-}
-
-.topRight {
-    height: 50%;
-    width: 50%;
-}
-
-.bottom {
-    display: flex;
-    height: 50%;
+    height: 80vh;
     width: 100%;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
-.bottomLeft {
-    height: 50%;
-    width: 50%;
+.gridContainer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
 }
 
-.bottomRight {
-    height: 50%;
-    width: 50%;
+.gridContainer>div {
+    border: 1px solid black;
+}
+
+.gridContainer>div:nth-child(2) {
+    border: 2px solid black;
+}
+
+.gridContainerInner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.gridContainerInner>div {
+    border: 1px solid black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
