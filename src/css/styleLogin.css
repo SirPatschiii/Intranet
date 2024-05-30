@@ -31,7 +31,6 @@ h1 {
 }
 
 body {
-    position: relative;
     background-image: url("../images/BackgroundLogin.png");
 }
 
@@ -112,7 +111,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 15%;
+    padding-top: 15vh;
 }
 
 section {
