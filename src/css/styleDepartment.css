@@ -37,7 +37,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  min-height: 80px;
+  height: 3%;
   min-width: 100%;
   display: flex;
   justify-content: center;
