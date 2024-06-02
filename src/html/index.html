@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styleIndex.css">
 </head>
 
-<body>
+<body id="body" class="scroll">
     <header>
         <a href="./index.html"><img class="navLogo" src="../images/IntraDLTransparent.png" alt="IntraDL Logo"></a>
         <nav>
@@ -31,31 +31,49 @@
 
     <main>
         <div class="addContainer">
-            <button>Neuer Beitrag</button>
+            <button id="newArticle">Neuer Beitrag</button>
         </div>
 
         <div class="gridContainer">
-            <div>
-                
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
+            <div id="content0"></div>
+            <div id="content1"></div>
+            <div id="content2"></div>
+            <div id="content3"></div>
+            <div id="content4"></div>
         </div>
     </main>
 
-    <footer>
+    <form id="formNewArticle" class="hidden">
+        <div>
+            <h1>Neuer Beitrag</h1>
+        </div>
 
-    </footer>
+        <div>
+            <label for="title">Titel</label>
+            <input type="text" id="title" />
+        </div>
+
+        <div>
+            <label for="author">Author</label>
+            <input type="text" id="author" />
+        </div>
+
+        <div>
+            <label for="content">Inhalt</label>
+            <textarea id="content" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="formButtons">
+            <div>
+                <button id="formBackButton" type="reset" onclick="location.href='./index.html'" class="formBack">Zurück</button>
+            </div>
+            <div>
+                <button id="formAddButton" type="submit" class="formAdd">Hinzufügen</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
