@@ -1,0 +1,87 @@
+header {
+    background: linear-gradient(
+      to bottom right,
+      rgb(246, 246, 246),
+      rgb(158, 158, 158)
+    );
+    box-shadow: 0px 0px 15px -4px #000000;
+    max-height: 8vh;
+    position: sticky;
+    top: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-height: 8vh;
+  }
+
+  .navLeft {
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .navLeft a {
+    width: 30%;
+    max-height: 8vh;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .navLogo>img {
+    max-height: 7vh;
+    max-width: 60%;
+  }
+
+  nav ul li {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    max-height: 8vh;
+  }
+
+  nav a{
+    font-family: MontserratBold, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #000000;
+    align-self: center;
+    max-height: 8vh;
+  }
+
+  :hover{
+    color: #1f1fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navMiddle {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+
+  .subNav {
+    width: 25%;
+    min-height: 24vh;
+    flex-direction: column;
+    margin-top: -2.3vh;
+  }
+
+  #subNavForm> {
+    color: #000000;
+    background: none;
+  }
+
+  .visibility {
+    visibility: hidden;
+  }
+
+  .navRight {
+    max-height: 8vh;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }

@@ -34,89 +34,7 @@ body {
   position: relative;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  height: 3%;
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    rgb(246, 246, 246),
-    rgb(158, 158, 158)
-  );
-  box-shadow: 0px 0px 15px -4px #000000;
-}
 
-.navLogo {
-  cursor: pointer;
-  position: absolute;
-  height: 80px;
-  padding: 10px;
-  top: 0px;
-  left: 5%;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul ul {
-  display: none;
-  font-family: MontserratBold, sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000000;
-  position: fixed;
-}
-nav ul li:hover > ul {
-  display: inline-block;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-nav ul li a,
-p {
-  font-family: MontserratBold, sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000000;
-}
-
-nav ul li a:hover {
-  color: #1f1fff;
-  transition: 0.3s ease-in-out;
-}
-
-.formularsub {
-  margin-top: 32px;
-}
-
-#subnav {
-  height: 84px;
-}
-
-#subnav > p {
-  margin-top: 25px;
-}
-
-.formularsub li {
-  text-align: center;
-  width: 210px;
-  height: 30px;
-  background: linear-gradient(
-    to bottom right,
-    rgb(246, 246, 246),
-    rgb(158, 158, 158)
-  );
-  box-shadow: 0px 0px 15px -4px #000000;
-  display: block;
-}
 
 main {
   width: 80%;
@@ -127,7 +45,6 @@ main {
 .contentframe {
   border: 2px solid #1f1fff;
   border-radius: 8px;
-  height: 83vh;
   display: flex;
   flex-direction: column;
 }
@@ -251,7 +168,6 @@ h3 {
   height: 40%;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow-y: scroll;
 }
 
 .bottomContent p {
