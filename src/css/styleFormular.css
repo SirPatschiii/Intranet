@@ -38,92 +38,6 @@ body {
   position: relative;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  min-height: 80px;
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    rgb(246, 246, 246),
-    rgb(158, 158, 158)
-  );
-  box-shadow: 0px 0px 15px -4px #000000;
-}
-
-.navLogo {
-  cursor: pointer;
-  position: absolute;
-  height: 80px;
-  padding: 10px;
-  top: 0px;
-  left: 5%;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul ul {
-  display: none;
-  font-family: MontserratBold, sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000000;
-  position: fixed;
-}
-
-nav ul li:hover > ul {
-  display: inline-block;
-  background-color: white;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-nav ul li a,
-p {
-  font-family: MontserratBold, sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000000;
-}
-
-nav ul li a:hover {
-  color: #1f1fff;
-  transition: 0.3s ease-in-out;
-}
-
-.formularsub {
-  margin-top: 32px;
-}
-
-#subnav {
-  height: 84px;
-}
-
-#subnav > p {
-  margin-top: 25px;
-}
-
-.formularsub li {
-  text-align: center;
-  width: 210px;
-  height: 30px;
-  background: linear-gradient(
-    to bottom right,
-    rgb(246, 246, 246),
-    rgb(158, 158, 158)
-  );
-  box-shadow: 0px 0px 15px -4px #000000;
-  display: block;
-}
-
 main {
   width: 80%;
   height: 101%;
@@ -135,79 +49,84 @@ main {
   border: 2px solid #1f1fff;
   border-radius: 8px;
   min-height: 83vh;
+  max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .formurlaubtop {
   height: 40%;
-  flex-grow: 1;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formurlaubtop > h1 {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  height: 1.5em;
+  font-size: 3vw;
+  align-content: center;
 }
 
 .formurlaubname,
 .formurlaubzeit,
 .formurlaubver {
-  width: 80%;
-  height: 2rem;
-  padding-left: 34%;
-  margin-bottom: 20px;
+  height: 9vh;
+  width: 60%;
+  align-content: center;
 }
 
 .formurlaubname label {
   text-align: left;
   float: left;
-  width: 100px;
-  margin-right: 10px;
+  width: 22%;
+  font-size: 1.5vw;
 }
 
 .formurlaubname input {
-  width: 300px;
+  width: 70%;
   float: left;
 }
 
 .formurlaubzeitraum {
   display: inline;
+  height: 100%;
+  width: 60%;
 }
 
 .formurlaubzeit label {
   text-align: left;
   float: left;
-  width: 100px;
-  margin-right: 10px;
+  width: 22%;
+  font-size: 1.5vw;
 }
 
 .formurlaubzeit input {
-  width: 150px;
+  width: 35%;
   float: left;
 }
 
 .formurlaubver label {
   text-align: left;
   float: left;
-  width: 100px;
-  margin-right: 10px;
+  width: 22%;
+  font-size: 1.5vw;
 }
 
 .formurlaubver input {
-  width: 300px;
+  width: 70%;
   float: left;
 }
 
 .formurlaubbem {
-  margin-top: 10px;
+  margin-top: 20px;
   height: 40%;
   flex-grow: 1;
 }
 
 #urlaubbemerkung {
-  width: 50%;
+  width: 60%;
   height: 100px;
   resize: none;
 }
