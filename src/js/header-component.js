@@ -2,23 +2,25 @@ class HeaderComponent extends HTMLElement {
   constructor() {
       super();
       this.attachShadow({ mode: 'open' });
+      this.subNavTitelLink = null;
   }
 
   connectedCallback() {
       this.render();
-      this.shadowRoot.querySelector('#subNavForm').addEventListener('click', this.subNav.bind(this));
+      this.subNavTitelLink = this.shadowRoot.querySelector('#subNavTitel');
+      this.subNavTitelLink.addEventListener('click', this.subNav.bind(this));
   }
 
   subNav(event) {
     const subNav = this.shadowRoot.querySelector(".subNav");
     const subNavElements = subNav.querySelector(".subNavElements");
 
-    if (subNavElements.style.display === "none") {
+    if (subNavElements.style.display === "none" || subNavElements.style.display === "") {
         subNavElements.style.display = "flex";
     } else {
         subNavElements.style.display = "none";
+
     }
-    
   }
 
   render() {
@@ -35,13 +37,13 @@ class HeaderComponent extends HTMLElement {
               <ul class="navMiddle">
                     <li><a href="../html/index.html">News</a></li>
                     <li><a href="../html/dashboard.html">Dashboard</a></li>
-                    <li class="subNav">
-                        <a href="javascript:void(0)" id="subNavTitel">Formulare</a>
+                    <li class="subNav" id="subNav">
+                        <a href="javascript:void(0)" id="subNavTitel" class="subNavTitelLink">Formulare</a>
                         <ul class="subNavElements">
-                            <li class="visibility">
+                            <li>
                                 <a href="../html/formularurlaub.html" id="subNavUrlaub">Urlaub</a>
                             </li>
-                            <li class="visibility">
+                            <li>
                                 <a href="../html/formularfeedback.html" id="subNavFeed">Feedback</a>
                             </li>
                         </ul>

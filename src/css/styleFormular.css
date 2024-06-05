@@ -160,46 +160,39 @@ main {
 }
 
 .formfeedbacktop {
-  height: 20%;
-  flex-grow: 1;
-}
-
-.formfeedbacktop > h1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.formfeedbacktop h2 {
-  margin-bottom: 10px;
+  height: 60%;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formfeedbackname,
 .formfeedbackzeit {
-  width: 80%;
-  height: 2rem;
-  padding-left: 34%;
-  margin-bottom: 20px;
+  width: 60%;
+  height: 9vh;
+  align-content: center;
 }
 
 .formfeedbackname label {
   text-align: left;
   float: left;
-  width: 90px;
+  width: 22%;
 }
 
 .formfeedbackname input {
-  width: 300px;
+  width: 50%;
   float: left;
 }
 
 .formfeedbackzeit label {
   text-align: left;
   float: left;
-  width: 90px;
+  width: 22%;
 }
 
 .formfeedbackzeit input {
-  width: 150px;
+  width: 25%;
   float: left;
 }
 
@@ -208,38 +201,35 @@ main {
 }
 
 .formfeedbackkom {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 12vh;
+  width: 60%;
 }
-
 .formfeedbackpers{
-  padding-left: 35%;
-  width: 70%;
   display: flex;
   flex-direction: row;
 }
 
 .left {
   flex-grow: 1;
-  width: 150px;
+  width: 20%;
 }
 
 .left > div {
   display: flex;
   flex-direction: row;
-  width: 150px;
+  width: 15%;
 }
 
 .left label {
   flex-grow: 1;
   text-align: left;
-  width: 120px;
+  width: 12%;
 }
 
 .left>input  {
   flex-grow: 1;
-  height: 13px;
-  width: 13px;
+  height: 5%;
+  width: 5%;
 }
 
 .right {
@@ -249,29 +239,19 @@ main {
 .right > div {
   display: flex;
   flex-direction: row;
-  width: 165px;
+  width: 15%;
 }
 
 .right label {
   flex-grow: 1;
   text-align: left;
-  width: 150px;
+  width: 15%;
 }
 
 .right>input  {
   flex-grow: 1;
-  height: 13px;
-  width: 13px;
-}
-
-
-.formfeedbackgrund > h2 {
-  margin-bottom: 10px;
-}
-
-.formfeedbackgrund > hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 5%;
+  width: 5%;
 }
 
 .formfeedbackgrundradio > input[type="radio"] {

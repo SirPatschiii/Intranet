@@ -5,56 +5,9 @@ header {
       rgb(158, 158, 158)
     );
     box-shadow: 0px 0px 15px -4px #000000;
-    max-height: 8vh;
+    height: 8vh;
     position: sticky;
     top: 0;
-  }
-
-  nav {
-    display: flex;
-    max-height: 8vh;
-    width: 100%;
-  }
-
-  nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-
-  nav a{
-    font-family: MontserratBold, sans-serif;
-    font-size: 1.5vw;
-    text-decoration: none;
-    color: #000000;
-    align-self: center;
-    max-height: 8vh;
-  }
-
-  .navLeft {
-    width: 30%;
-    height: inherit;
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  .navLeft a {
-    width: 30%;
-    max-height: 8vh;
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  .navLogo a{
-    height: 8vh;
-  }
-
-  nav ul li {
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    max-height: 8vh;
   }
 
   :hover{
@@ -62,28 +15,105 @@ header {
     transition: 0.3s ease-in-out;
   }
 
+  nav {
+    display: flex;
+    height: 8vh;
+    width: 100%;
+  }
+
+  * ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    height: 8vh;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a{
+    max-height: 8vh;
+    font-family: MontserratBold, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #000000;
+    align-self: center;
+  }
+
+  .navLeft {
+    height: inherit;
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .navLeft a {
+    height: inherit;
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .navLogo {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 5%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .navLogo a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navLogo img {
+    max-height: 100%;
+  }
+
   .navMiddle {
     display: flex;
     flex-direction: row;
     width: 40%;
+    height: inherit;
   }
 
   .subNav{
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
+    width: 25%;
+    height: inherit;
+    position: relative;
   }
 
-  .subNav > .subNavElements{
+  .subNavElements{
     display: none;
-    z-index: 1;
-    flex-direction: column; /* or row */
-  }
-
-  .visibility {
-    visibility: hidden;
+    position: absolute;
+    top: 100%;
     z-index: 1;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 16vh;
+    background: linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158));
+    box-shadow: 0px 0px 15px -4px #000000;
+  }
+
+  .subNavElements li {
+    height: 8vh;
+    width: 100%;
+  }
+
+  .subNavElements a {
+    align-self: center;
   }
 
   .navRight {
