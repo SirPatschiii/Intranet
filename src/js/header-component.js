@@ -17,13 +17,10 @@ class HeaderComponent extends HTMLElement {
             elements[i].classList.remove("visibility");
             subNav.style.background = 'linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158))';
             subNav.style.boxShadow = '0px 0px 15px -4px #000000';
-            setTimeout(function() {
-                elements[i].classList.add("visibility");
-                subNav.style.background = 'none';
-                subNav.style.boxShadow = 'none';
-            }, 3000);
         } else {
             elements[i].classList.add("visibility");
+            subNav.style.background = 'none';
+            subNav.style.boxShadow = 'none';
         }
       }
   }
@@ -38,19 +35,19 @@ class HeaderComponent extends HTMLElement {
                   </a>
               </div>
               <ul class="navMiddle">
-                  <li><a href="../html/index.html">News</a></li>
-                  <li><a href="../html/dashboard.html">Dashboard</a></li>
-                  <li class="subNav">
-                      <a href="javascript:void(0)" id="subNavForm">Formulare</a>
-                      <a href="../html/formularurlaub.html" id="subNavUrlaub" class="visibility">Urlaub</a>
-                      <a href="../html/formularfeedback.html" id="subNavFeed" class="visibility">Feedback</a>
-                  </li>
-                  <li><a href="./department.html">Abteilung</a></li>
+                    <li><a href="../html/index.html">News</a></li>
+                    <li><a href="../html/dashboard.html">Dashboard</a></li>
+                    <li><a href="javascript:void(0)" id="subNavForm">Formulare</a></li>
+                    <li><a href="./department.html">Abteilung</a></li>
               </ul>
               <div class="navRight">
                   <a href="../html/login.html" id="navLogin">Login</a>
               </div>
           </nav>
+          <div class="subNav">
+                <a href="../html/formularurlaub.html" id="subNavUrlaub" class="visibility">Urlaub</a>
+                <a href="../html/formularfeedback.html" id="subNavFeed" class="visibility">Feedback</a>
+            </div>
       </header>
       <script type="text/javascript" src="../js/scriptDepartment.js"></script>
       `;

@@ -63,12 +63,6 @@ header {
     width: 40%;
   }
 
-  .subNav {
-    width: 25%;
-    min-height: 24vh;
-    flex-direction: column;
-    margin-top: -2.3vh;
-  }
 
   #subNavForm> {
     color: #000000;
@@ -84,4 +78,26 @@ header {
     width: 30%;
     display: flex;
     justify-content: space-around;
+  }
+
+  .subNav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    width: 10%;
+    height: 16vh;
+    top: 0.5vh;
+    left: 51.5vw;
+  }
+
+  #subNavUrlaub,
+  #subNavFeed {
+    height: 8vh;
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
+    font-family: MontserratBold, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
   }
