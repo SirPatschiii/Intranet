@@ -15,12 +15,12 @@ class HeaderComponent extends HTMLElement {
     for(let i=0; i<elements.length; i++){
         if(elements[i].classList.contains("visibility")){
             elements[i].classList.remove("visibility");
-            subNav.style.background = 'linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158))';
-            subNav.style.boxShadow = '0px 0px 15px -4px #000000';
+            elements[i].style.background = 'linear-gradient(to bottom right, rgb(246, 246, 246), rgb(158, 158, 158))';
+            elements[i].style.boxShadow = '0px 0px 15px -4px #000000';
         } else {
             elements[i].classList.add("visibility");
-            subNav.style.background = 'none';
-            subNav.style.boxShadow = 'none';
+            elements[i].style.background = 'none';
+            elements[i].style.boxShadow = 'none';
         }
       }
   }
