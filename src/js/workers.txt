@@ -1,0 +1,17 @@
+"userName":"eric.schroeder", "passwort":"Szq34amXtm", "geschaeftsfuehrung":"Geschäftsführung";
+"userName":"paul.schweizer", "passwort":"ATxYNheajT", "geschaeftsfuehrung":"Geschäftsführung";
+"userName":"martha.blume", "passwort":"huYgLuSdZq", "geschaeftsfuehrung§:"Geschäftsführung";
+"userName":"carsten.breit", "passwort":"RkRk9bYVzP", "geschaeftsfuehrung":"Geschäftsführung";
+"userName":"leonie.nacht", "passwort":"LxpxzusP5T", "verwaltung":"Verwaltung":
+"userName":"paul.schweizer", "passwort":"Gqmzw2aB52", "verwaltung":"Verwaltung";
+"userName":"martha.blume", "passwort":"rhDsAjB8kR", "verwaltung":"Verwaltung";
+"userName":"carsten.breit", "passwort":"CUcpFkbXkL", "verwaltung":"Verwaltung";
+"userName":"eric.schroeder", "passwort":"64LfnGC49m", "technik":"Technik";
+"userName":"paul.schweizer", "passwort":"B4w9zFxZ7n", "technik":"Technik";
+"userName":"martha.blume", "passwort":"LgEVtcCBB3", "technik":"Technik";
+"userName":"carsten.breit", "passwort":"nsP7u7YEJW", "technik":"Technik";
+"userName":"eric.schroeder", "passwort":"uHgwkXLHkG", "verkauf":"Verkauf";
+"userName":"paul.schweizer", "passwort":"8SZ2kpBXgZ", "verkauf":"Verkauf";
+"userName":"martha.blume", "passwort":"N3JftKhCTc", "verkauf":"Verkauf";
+"userName":"carsten.breit", "passwort":"XhhqxbyH8x", "verkauf":"Verkauf";
+
