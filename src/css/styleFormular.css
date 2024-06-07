@@ -27,11 +27,25 @@
 }
 
 h1 {
-  font-size: 40px;
-}
+  font-size: 3.5vw;
+  align-content: center;
+  margin: 0.5% 0 0.5% 0;
+ }
 
 h2 {
-  font-size: 25px;
+  font-size: 2.75vw;
+  align-content: center;
+  margin: 0.5% 0 0.5% 0;
+}
+
+h3 {
+  font-size: 1.75vw;
+  align-content: center;
+  margin: 0.5% 0 0.5% 0;
+}
+
+hr {
+  width: 50vw;
 }
 
 body {
@@ -63,60 +77,65 @@ main {
   align-items: center;
 }
 
-.formurlaubtop > h1 {
-  height: 1.5em;
-  font-size: 3vw;
-  align-content: center;
-}
-
 .formurlaubname,
 .formurlaubzeit,
-.formurlaubver {
-  height: 9vh;
+.formurlaubver,
+.formfeedbackname,
+.formfeedbackzeit {
+  height: 9.5vh;
   width: 60%;
   align-content: center;
+  padding-left: 3%;
 }
 
-.formurlaubname label {
+.formurlaubname label,
+.formfeedbackname label {
   text-align: left;
   float: left;
-  width: 22%;
+  width: 21%;
   font-size: 1.5vw;
 }
 
-.formurlaubname input {
+.formurlaubname input,
+.formfeedbackname input {
   width: 70%;
   float: left;
+  font-size: 1.5vw;
 }
 
-.formurlaubzeitraum {
+.formurlaubzeitraum,
+.formfeedbackzeitraum {
   display: inline;
   height: 100%;
   width: 60%;
 }
 
-.formurlaubzeit label {
+.formurlaubzeit label,
+.formfeedbackzeit label {
   text-align: left;
   float: left;
-  width: 22%;
+  width: 21%;
   font-size: 1.5vw;
 }
 
-.formurlaubzeit input {
+.formurlaubzeit input,
+.formfeedbackzeit input {
   width: 35%;
   float: left;
+  font-size: 1.5vw;
 }
 
 .formurlaubver label {
   text-align: left;
   float: left;
-  width: 22%;
+  width: 21%;
   font-size: 1.5vw;
 }
 
 .formurlaubver input {
   width: 70%;
   float: left;
+  font-size: 1.5vw;
 }
 
 .formurlaubbem {
@@ -138,7 +157,7 @@ main {
   margin-bottom: 20px;
 }
 
-.formsenden > input[type="button" i] {
+.formsenden > input {
   font-family: MontserratBold, sans-serif;
   font-size: 0.8rem;
   color: #ffffff;
@@ -159,6 +178,13 @@ main {
   flex-wrap: wrap;
 }
 
+.formfeedback h1 {
+  font-size: 3vw;
+}
+.formfeedback h2 {
+  font-size: 2vw;
+}
+
 .formfeedbacktop {
   height: 60%;
   max-width: inherit;
@@ -167,96 +193,89 @@ main {
   align-items: center;
 }
 
-.formfeedbackname,
-.formfeedbackzeit {
-  width: 60%;
-  height: 9vh;
-  align-content: center;
-}
-
-.formfeedbackname label {
-  text-align: left;
-  float: left;
-  width: 22%;
-}
-
-.formfeedbackname input {
-  width: 50%;
-  float: left;
-}
-
-.formfeedbackzeit label {
-  text-align: left;
-  float: left;
-  width: 22%;
-}
-
-.formfeedbackzeit input {
-  width: 25%;
-  float: left;
-}
-
-.formfeedbackzeitraum {
-  display: inline;
-}
-
 .formfeedbackkom {
-  height: 12vh;
+  height: 30%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1% 0 1% 0;
 }
 .formfeedbackpers{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 40%;
+  width: 70%;
 }
 
-.left {
-  flex-grow: 1;
-  width: 20%;
-}
-
-.left > div {
+.formfeedpersTop,
+.formfeedpersBottom {
   display: flex;
   flex-direction: row;
-  width: 15%;
+  height: 50%;
+}
+.checkboxAbteilungsleiter,
+.checkboxGf{
+  width: 60%;
 }
 
-.left label {
-  flex-grow: 1;
+.checkboxTeilnehmer,
+.checkboxKollegen {
+  width: 40%;
+}
+
+.checkboxAbteilungsleiter label,
+.checkboxGf label,
+.checkboxTeilnehmer label,
+.checkboxKollegen label{
+  display: inline-block;
+  width: 55%;
   text-align: left;
-  width: 12%;
+  font-size: 1.25vw;
 }
 
-.left>input  {
-  flex-grow: 1;
-  height: 5%;
-  width: 5%;
+.checkboxTeilnehmer label,
+.checkboxKollegen label {
+  width: 45%;
+  font-size: 1.25vw;
 }
 
-.right {
-  flex-grow: 1;
+.checkboxAbteilungsleiter input,
+.checkboxGf input,
+.checkboxTeilnehmer input,
+.checkboxKollegen input{
+  height: 3.5vh;
+  width: 3.5vw;
 }
 
-.right > div {
+.formfeedbackgrund {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formfeedbackgrundradio {
   display: flex;
   flex-direction: row;
-  width: 15%;
+  width: 60%;
+  margin: 1% 0 1% 0;
+  align-items: center;
 }
 
-.right label {
-  flex-grow: 1;
-  text-align: left;
-  width: 15%;
+.radioUrlaub,
+.radioWeiterbildung,
+.radioPersoenlich {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
 }
 
-.right>input  {
-  flex-grow: 1;
-  height: 5%;
-  width: 5%;
+.radioUrlaub label,
+.radioWeiterbildung label,
+.radioPersoenlich label{
+  font-size: 1.25vw;
 }
 
-.formfeedbackgrundradio > input[type="radio"] {
-  margin-right: 12px;
-}
 
 .formfeedbackbem {
   height: 20%;
@@ -265,6 +284,6 @@ main {
 
 #feedbackbemerkung {
   width: 50%;
-  height: 100px;
+  height: 80px;
   resize: none;
 }

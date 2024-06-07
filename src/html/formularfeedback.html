@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IntraDL Formulare</title>
-    <link rel="icon" type="image/x-icon" href="../images/IntraDLFavicon.png">
-    <link rel="stylesheet" href="../css/styleFormular.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="../images/IntraDLFavicon.png" />
+    <link rel="stylesheet" href="../css/styleFormular.css" />
+  </head>
 
-<body>
+  <body>
     <header-component></header-component>
 
     <main>
-        <form action="" class="formfeedback" id="feedback">
-            <div class="formfeedbacktop">
-                <h1>Feedbackgespräch</h1>
-                <div class="formfeedbackname">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" autocomplete="off">
-                </div>
+      <form accept="../scriptFormularFeedback.js" class="formfeedback" id="feedback">
+        <div class="formfeedbacktop">
+          <h1>Feedbackgespräch</h1>
+          <div class="formfeedbackname">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" autocomplete="off" required/>
+          </div>
 
-                <div class="formfeedbackzeit">
-                    <label for="von">Zeitraum</label>
-                    <div class="formfeedbackzeitraum">
-                        <input type="date" name="von" placeholder="von" id="von">
-                        <input type="date" name="bis" placeholder="bis">
-                    </div>
-                </div>
-
-                <div class="formfeedbackkom">
-                    <h2>Gespräch mit ...</h2>
-                    <div class="formfeedbackpers">
-                        <div class="left">
-                            <div>
-                                <label for="abteilungsleiter">Abteilungsleiter</label>
-                                <input type="checkbox" name="abteilungsleiter" id="abteilungsleiter">
-                            </div>
-                            <div>
-                                <label for="teilnehmer">Teamleiter</label>
-                                <input type="checkbox" name="teilnehmer" id="teilnehmer">
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div>
-                                <label for="gf">Geschäftsführung</label>
-                                <input type="checkbox" name="gf" id="gf">
-                            </div>
-                            <div>
-                                <label for="kollegen">Kollegen</label>
-                                <input type="checkbox" name="kollegen" id="kollegen">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="formfeedbackgrund">
-                    <hr>
-                    <h2>Feedbackgrund</h2>
-                    <div class="formfeedbackgrundradio">
-                        <label for="urlaub">Urlaub steht an</label>
-                        <input type="radio" name="formfeedbackgrundradio" value="urlaub" id="urlaub">
-                        <label for="weiterbildung">Weiterbildung</label>
-                        <input type="radio" name="formfeedbackgrundradio" value="weiterbildung" id="weiterbildung">
-                        <label for="persoenlich">persönlich</label>
-                        <input type="radio" name="formfeedbackgrundradio" value="persoenlich" id="persoenlich">
-                    </div>
-                </div>
+          <div class="formfeedbackzeit">
+            <label for="von">Zeitraum</label>
+            <div class="formfeedbackzeitraum">
+              <input type="date" name="von" placeholder="von" id="von" required/>
+              <input type="date" name="bis" placeholder="bis" id="bis" required/>
             </div>
+          </div>
 
-            <div class="formfeedbackbem">
-                <label for="feedbackbemerkung"><h2>Bemerkung</h2></label>
-                <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea>
+          <div class="formfeedbackkom">
+            <hr />
+            <h2>Gespräch mit ...</h2>
+            <div class="formfeedbackpers">
+              <div class="formfeedpersTop">
+                <div class="checkboxAbteilungsleiter">
+                  <label for="abteilungsleiter">Abteilungsleiter</label>
+                  <input type="checkbox" class="checkBoxes" name="Abteilungsleiter" id="abteilungsleiter"/>
+                </div>
+                <div class="checkboxTeilnehmer">
+                  <label for="teilnehmer">Teamleiter</label>
+                  <input type="checkbox" class="checkBoxes" name="Teamleiter" id="teamleiter" />
+                </div>
+              </div>
+              <div class="formfeedpersBottom">
+                <div class="checkboxGf">
+                  <label for="gf">Geschäftsführung</label>
+                  <input type="checkbox" class="checkBoxes" name="Geschäftsführung" id="gf" />
+                </div>
+                <div class="checkboxKollegen">
+                  <label for="kollegen">Kollegen</label>
+                  <input type="checkbox" class="checkBoxes" name="Kollegen" id="kollegen" />
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="formsenden">
-                <input type="button" value="Senden">
+          <div class="formfeedbackgrund">
+            <hr />
+            <h2>Feedbackgrund</h2>
+            <div class="formfeedbackgrundradio">
+              <div class="radioUrlaub">
+                <label for="urlaub">bald Urlaub</label>
+                <input type="radio" class="radioChoice" name="formfeedbackgrundradio" value="Urlaub" id="urlaub"/>
+              </div>
+              <div class="radioPersoenlich">
+                <label for="persoenlich">persönlich</label>
+                <input type="radio" class="radioChoice" name="formfeedbackgrundradio" value="persönlich" id="persoenlich"/>
+              </div>
+              <div class="radioWeiterbildung">
+                <label for="weiterbildung">Weiterbildung</label>
+                <input type="radio" class="radioChoice" name="formfeedbackgrundradio" value="Weiterbildung" id="weiterbildung"/>
+              </div>
             </div>
-        </form>
+          </div>
+          <hr />
+        </div>
+
+        <div class="formfeedbackbem">
+          <label for="feedbackbemerkung"><h2>Bemerkung</h2></label>
+          <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea>
+        </div>
+
+        <div class="formsenden">
+          <input type="submit" id="submitFeedbackButton">
+        </div>
+      </form>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script type="module" src="../js/header-component.js"></script>
-</body>
-
+    <script src="../js/scriptFormularFeedback.js"></script>
+  </body>
 </html>

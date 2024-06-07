@@ -12,12 +12,12 @@
 <body>
     <header-component></header-component>
     <main>
-        <form action="" class="formurlaub" id="urlaubsantrag">
+        <form accept="../scriptFormularUrlaub.js" class="formurlaub" id="urlaubsantrag">
             <div class="formurlaubtop">
                 <h1>Urlaubsantrag 2024</h1>
                 <div class="formurlaubname">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" autocomplete="off">
+                    <input type="text" name="name" id="name" autocomplete="off" required>
                 </div>
 
                 <div class="formurlaubzeit">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="formsenden">
-                <input type="button" value="Senden">
+                <input type="submit" id="submitUrlaubButton">
             </div>
         </form>
     </main>
@@ -49,6 +49,7 @@
 
     </footer>
     <script type="module" src="../js/header-component.js"></script>
+    <script src="../js/scriptFormularUrlaub.js"></script>
 </body>
 
 </html>

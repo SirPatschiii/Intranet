@@ -34,8 +34,6 @@ body {
   position: relative;
 }
 
-
-
 main {
   width: 80%;
   height: 101%;
@@ -47,6 +45,14 @@ main {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+}
+
+a {
+  color:#1f1fff;
+}
+
+a:hover {
+  color: darkgrey;
 }
 
 h3 {
@@ -63,10 +69,11 @@ h3 {
   flex-direction: column;
   margin-top: 10px;
   flex-wrap: nowrap;
+  padding-bottom: 1%;
   border-bottom: 2px solid lightgrey;
 }
 
-.topContent>h2 {
+.topContent > h2 {
   text-align: center;
   font-size: 30px;
   padding-bottom: 10px;
@@ -88,11 +95,11 @@ h3 {
   width: 20%;
 }
 
-.mitarbeiter>ul {
+.mitarbeiter > ul {
   display: inline-block;
 }
 
-.mitarbeiter>ul>li {
+.mitarbeiter > ul > li {
   text-align: left;
   width: 6em;
   display: flex;
@@ -135,7 +142,7 @@ h3 {
   width: 20%;
 }
 
-.tools>ol {
+.tools > ol {
   margin-left: 20%;
 }
 
@@ -157,8 +164,8 @@ h3 {
   text-align: center;
 }
 
-.meetings>h2,
-.knowHow>h2 {
+.meetings > h2,
+.knowHow > h2 {
   text-align: center;
   font-size: 28px;
   padding-bottom: 1%;
@@ -178,5 +185,3 @@ h3 {
   width: 60%;
   text-align: justify;
 }
-
-
