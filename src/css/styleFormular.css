@@ -30,7 +30,7 @@ h1 {
   font-size: 3.5vw;
   align-content: center;
   margin: 0.5% 0 0.5% 0;
- }
+}
 
 h2 {
   font-size: 2.75vw;
@@ -181,6 +181,7 @@ main {
 .formfeedback h1 {
   font-size: 3vw;
 }
+
 .formfeedback h2 {
   font-size: 2vw;
 }
@@ -201,7 +202,8 @@ main {
   align-items: center;
   margin: 1% 0 1% 0;
 }
-.formfeedbackpers{
+
+.formfeedbackpers {
   display: flex;
   flex-direction: column;
   height: 40%;
@@ -214,8 +216,9 @@ main {
   flex-direction: row;
   height: 50%;
 }
+
 .checkboxAbteilungsleiter,
-.checkboxGf{
+.checkboxGf {
   width: 60%;
 }
 
@@ -227,7 +230,7 @@ main {
 .checkboxAbteilungsleiter label,
 .checkboxGf label,
 .checkboxTeilnehmer label,
-.checkboxKollegen label{
+.checkboxKollegen label {
   display: inline-block;
   width: 55%;
   text-align: left;
@@ -243,7 +246,7 @@ main {
 .checkboxAbteilungsleiter input,
 .checkboxGf input,
 .checkboxTeilnehmer input,
-.checkboxKollegen input{
+.checkboxKollegen input {
   height: 3.5vh;
   width: 3.5vw;
 }
@@ -272,10 +275,9 @@ main {
 
 .radioUrlaub label,
 .radioWeiterbildung label,
-.radioPersoenlich label{
+.radioPersoenlich label {
   font-size: 1.25vw;
 }
-
 
 .formfeedbackbem {
   height: 20%;
