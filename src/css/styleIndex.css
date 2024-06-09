@@ -30,6 +30,16 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-family: MontserratSemiBold, sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: MontserratMedium, sans-serif;
+    font-size: 16px;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -75,7 +85,7 @@ nav ul li {
 }
 
 nav ul li a,
-p {
+nav ul li a p {
     font-family: MontserratBold, sans-serif;
     font-size: 22px;
     text-decoration: none;
@@ -145,10 +155,14 @@ main>div.addContainer {
 .gridContainer {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
+    grid-template-rows: auto auto auto auto auto;
     border: 2px solid #1F1FFF;
     border-radius: 30px;
     margin-bottom: 10vh;
+}
+
+.gridContainer>div {
+    padding: 1vh 1vw 1vh 1vw;
 }
 
 .gridContainer>div:not(:last-child) {
