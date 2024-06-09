@@ -38,6 +38,7 @@ h2 {
 p {
     font-family: MontserratMedium, sans-serif;
     font-size: 16px;
+    height: 5vh auto;
 }
 
 header {
