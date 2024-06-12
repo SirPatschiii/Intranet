@@ -17,14 +17,14 @@
           <h1>Feedbackgespräch</h1>
           <div class="formfeedbackname">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" autocomplete="off" required/>
+            <input type="text" name="name" id="name" autocomplete="off" required placeholder="Name"/>
           </div>
 
           <div class="formfeedbackzeit">
-            <label for="von">Zeitraum</label>
+            <label id="zeitraum" for="von">Zeitraum</label>
             <div class="formfeedbackzeitraum">
               <input type="date" name="von" placeholder="von" id="von" required/>
-              <input type="date" name="bis" placeholder="bis" id="bis" required/>
+              <input type="date" name="bis" placeholder="bis" id="bis" aria-label="zeitraum" required/>
             </div>
           </div>
 
@@ -38,7 +38,7 @@
                   <input type="checkbox" class="checkBoxes" name="Abteilungsleiter" id="abteilungsleiter"/>
                 </div>
                 <div class="checkboxTeilnehmer">
-                  <label for="teilnehmer">Teamleiter</label>
+                  <label for="teamleiter">Teamleiter</label>
                   <input type="checkbox" class="checkBoxes" name="Teamleiter" id="teamleiter" />
                 </div>
               </div>
@@ -78,11 +78,11 @@
 
         <div class="formfeedbackbem">
           <label for="feedbackbemerkung"><h2>Bemerkung</h2></label>
-          <textarea name="feedbackbemerkung" id="feedbackbemerkung"></textarea>
+          <textarea name="feedbackbemerkung" id="feedbackbemerkung" placeholder="Bemerkung"></textarea>
         </div>
 
         <div class="formsenden">
-          <input type="submit" id="submitFeedbackButton">
+          <input type="submit" id="submitFeedbackButton" aria-label="senden" value="Absenden">
         </div>
       </form>
     </main>

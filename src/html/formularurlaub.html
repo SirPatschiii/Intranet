@@ -17,30 +17,30 @@
                 <h1>Urlaubsantrag 2024</h1>
                 <div class="formurlaubname">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" autocomplete="off" required>
+                    <input type="text" name="name" id="name" autocomplete="off" required placeholder="Name">
                 </div>
 
                 <div class="formurlaubzeit">
-                    <label for="von">Zeitraum</label>
+                    <label id="zeitraum" for="von">Zeitraum</label>
                     <div class="formurlaubzeitraum" name="formurlaubzeitraum">
-                        <input type="date" name="von" id="von" required>
-                        <input type="date" name="bis" id="bis" required>
+                        <input type="date" name="von" id="von" required placeholder="tt-mm-jjjj">
+                        <input type="date" name="bis" id="bis" required aria-label="zeitraum" placeholder="tt-mm-jjjj">
                     </div>
                 </div>
 
                 <div class="formurlaubver">
                     <label for="vertretung">Vertretung</label>
-                    <input type="text" name="vertretung" id="vertretung" required>
+                    <input type="text" name="vertretung" id="vertretung" required placeholder="Vertretung">
                 </div>
             </div>
 
             <div class="formurlaubbem">
                 <label for="urlaubbemerkung"><h2>Bemerkung</h2></label><br/>
-                <textarea name="urlaubbemerkung" id="urlaubbemerkung" required></textarea><br/>
+                <textarea name="urlaubbemerkung" id="urlaubbemerkung" required placeholder="Bemerkung"></textarea><br/>
             </div>
 
             <div class="formsenden">
-                <input type="submit" id="submitUrlaubButton">
+                <input type="submit" id="submitUrlaubButton" aria-label="senden" value="Absenden">
             </div>
         </form>
     </main>

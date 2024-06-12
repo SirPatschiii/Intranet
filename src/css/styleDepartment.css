@@ -63,14 +63,6 @@ h2 {
   margin: 0.5% 0 0.5% 0;
 }
 
-h3 {
-  font-size: 1.5vw;
-  text-align: center;
-  margin: 0.5% 0 3% 0;
-  text-decoration: underline;
-  color: #1f1fff;
-}
-
 .top {
   height: 30%;
   display: flex;
@@ -86,13 +78,21 @@ h3 {
   height: 70%;
 }
 
-.topContenth3 {
+.topContenth2 {
   width: 100%;
   height: 30%;
   flex-grow: 1;
 }
 
-/*unter toph3 */
+.topContenth2>h2 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 0.5% 0 3% 0;
+  text-decoration: underline;
+  color: #1f1fff;
+}
+
+/*under toph2 */
 .topContentElements {
   width: 100%;
   min-height: 70%;
