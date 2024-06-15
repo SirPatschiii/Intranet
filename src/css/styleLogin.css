@@ -38,6 +38,30 @@ main {
     padding-top: 15vh;
 }
 
+footer {
+    position: absolute;
+    background: linear-gradient(to bottom right,
+            rgb(246, 246, 246),
+            rgb(158, 158, 158));
+    box-shadow: 0px 0px 15px -4px #000000;
+    padding: 1.5vh 1.5vw;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer>p {
+    padding: 5px;
+    text-align: center;
+}
+
+footer>p>a {
+    font-family: MontserratSemiBold, sans-serif;
+    color: #1F1FFF;
+    text-decoration: none;
+}
+
 section {
     margin-left: 25vw;
     margin-right: 25vw;
