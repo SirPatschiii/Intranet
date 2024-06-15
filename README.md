@@ -1,2 +1,2 @@
 # Intranet
-A project to create an intranet in a fictional company
+This project aims to create a website as part of Webengineering 1. We have chosen an intranet as the theme.
